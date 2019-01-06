@@ -15,8 +15,8 @@
 body {
   width: 8.5in;
   height: 11in;
-  margin: 1in auto;
-  box-shadow: 0px 10px 21px -1px rgba(0, 0, 0, 0.45);
+  margin: 10px;
+  border: 1px solid black;
 }
 body li {
   list-style: none;
@@ -54,19 +54,22 @@ body #columns .subtitle {
 body #columns .section {
   margin-bottom: 20px;
 }
-body #columns .job {
+body #columns .section .subsection {
   margin-bottom: 15px;
 }
-body #columns .job .job-description li {
+body #columns .section .subsection .description li {
   margin-bottom: 5px;
   line-height: 16px;
 }
-body #columns .job .job-title {
+body #columns .section .subsection .title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-body #columns .job .job-title p {
+body #columns .section .subsection .title.no-subtitle {
+  margin-bottom: 6px;
+}
+body #columns .section .subsection .title p {
   font-size: 14px;
   padding: 2px 5px;
   margin: 2px 0;
@@ -75,7 +78,7 @@ body #columns .job .job-title p {
   border-radius: 4px;
   color: darker(#EEEEEE, 0.5);
 }
-body #columns .job .job-title p span {
+body #columns .section .subsection .title p span {
   color: #d25454;
   font-weight: bold;
 }

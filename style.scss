@@ -20,8 +20,8 @@ $red: #d25454;
 body {
     width: 8.5in;
     height: 11in;
-    margin: 1in auto;
-    box-shadow: 0px 10px 21px -1px rgba(0,0,0,0.45); 
+    margin: 10px;
+    border: 1px solid black;
 
     li {
         list-style: none;
@@ -63,41 +63,44 @@ body {
 
         .section {
             margin-bottom: 20px;
-        }
 
-        .job {
+            .subsection {
 
-            margin-bottom: 15px;
+                margin-bottom: 15px;
 
-            .job-description {
+                .description {
 
-                li {
-                    margin-bottom: 5px;
-                    line-height: 16px;
-                }
-            } 
+                    li {
+                        margin-bottom: 5px;
+                        line-height: 16px;
+                    }
+                } 
 
-            .job-title {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
+                .title {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
 
-                p {
-                    font-size: 14px;
-                    padding: 2px 5px;
-                    margin: 2px 0;
-                    display: inline-block;
-                    background-color: #EEEEEE;
-                    border-radius: 4px;
-                    color: darker(#EEEEEE, 0.5);
+                    &.no-subtitle {
+                        margin-bottom: 6px;
+                    }
 
-                    span {
-                        color: $red;
-                        font-weight: bold;
+                    p {
+                        font-size: 14px;
+                        padding: 2px 5px;
+                        margin: 2px 0;
+                        display: inline-block;
+                        background-color: #EEEEEE;
+                        border-radius: 4px;
+                        color: darker(#EEEEEE, 0.5);
+
+                        span {
+                            color: $red;
+                            font-weight: bold;
+                        }
                     }
                 }
             }
-
         }
 
         .languages-list  {
