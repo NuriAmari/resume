@@ -14,36 +14,44 @@ $red: #d25454;
     i {
         vertical-align: middle;
     }
+     &.no-margin {
+        margin-bottom: 0 !important;
+    }
 }
-
 
 body {
     width: 8.5in;
     height: 11in;
-    margin: 10px;
-    border: 1px solid black;
+    //margin: 5px;
+    //box-shadow: 0px 5px 11px -4px rgba(0,0,0,0.69);
 
     li {
         list-style: none;
     }
 
+    h1 {
+        font-weight: medium;
+    }
+
     header {
-        padding: 0 0.35in;
+        padding: 0 0.39in;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        height: 1in;
+        height: 1.1in;
         background-color: $red;
         width: 100%;
         color: white;
     }
 
     #columns {
-        width: 95%;
-        margin: 5% 5%;
+        width: 100%;
         display: grid;
-        grid-template-columns: 45% 45%;
+        border: 2px solid darken(#EEEEEE, 0.2);
+        border-top: none;
+        padding: 4% 5%;
+        grid-template-columns: 47.5% 47.5%;
         grid-gap: 5%;
 
         li {
@@ -62,7 +70,14 @@ body {
         }
 
         .section {
+
+            h2 {
+                margin-bottom: 10px;
+            }
+            
             margin-bottom: 20px;
+
+           
 
             .subsection {
 
@@ -114,7 +129,16 @@ body {
                 border-radius: 4px;
             }
         }
+
+        #education {
+            p {
+                font-size: 14px;
+            }
+
+            #years, span {
+                font-family: "Fira Code";
+                margin-bottom: 10px;
+            }
+        }
     }
-
-
 }
