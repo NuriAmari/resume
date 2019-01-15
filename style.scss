@@ -22,8 +22,6 @@ $red: #d25454;
 body {
     width: 8.5in;
     height: 11in;
-    //margin: 5px;
-    //box-shadow: 0px 5px 11px -4px rgba(0,0,0,0.69);
 
     li {
         list-style: none;
@@ -63,6 +61,19 @@ body {
             color: $red;
         }
 
+        .subtitle-wrapper {
+            display: flex;
+            flex-direction: row; 
+            justify-content: space-between;
+            width: 100%;
+
+            .date {
+                font-family: 'Fira Code', sans-serif;
+                font-size: 13px;
+                margin-top: 3px;
+            }
+        } 
+        
         .subtitle {
             font-size: 15px;
             font-style: italic;
@@ -76,8 +87,6 @@ body {
             }
             
             margin-bottom: 20px;
-
-           
 
             .subsection {
 

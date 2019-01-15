@@ -52,6 +52,17 @@ body #columns .bullet {
   font-family: "Fira Code";
   color: #d25454;
 }
+body #columns .subtitle-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+body #columns .subtitle-wrapper .date {
+  font-family: "Fira Code", sans-serif;
+  font-size: 13px;
+  margin-top: 3px;
+}
 body #columns .subtitle {
   font-size: 15px;
   font-style: italic;
