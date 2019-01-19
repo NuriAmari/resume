@@ -23,7 +23,8 @@ body li {
   list-style: none;
 }
 body h1 {
-  font-weight: medium;
+  font-weight: bold;
+  font-size: 50px;
 }
 body header {
   padding: 0 0.4in;
@@ -32,7 +33,7 @@ body header {
   justify-content: space-between;
   align-items: center;
   height: 1.1in;
-  background-color: #d25454;
+  background-color: #4B77BE;
   width: 100%;
   color: white;
 }
@@ -51,7 +52,8 @@ body #columns li {
 }
 body #columns .bullet {
   font-family: "Fira Code";
-  color: #d25454;
+  color: #4B77BE;
+  font-weight: 500;
 }
 body #columns .subtitle-wrapper {
   display: flex;
@@ -100,7 +102,7 @@ body #columns .section .subsection .title p {
   color: darker(#EEEEEE, 0.5);
 }
 body #columns .section .subsection .title p span {
-  color: #d25454;
+  color: #4B77BE;
   font-weight: bold;
 }
 body #columns .languages-list {

@@ -1,5 +1,7 @@
-$red: #d25454;
-
+//$red: #d25454;
+//$red: #1F4788;
+//$red: #48929B;
+$red: #4B77BE;
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +30,8 @@ body {
     }
 
     h1 {
-        font-weight: medium;
+        font-weight: bold;
+        font-size: 50px;
     }
 
     header {
@@ -60,6 +63,7 @@ body {
         .bullet {
             font-family: 'Fira Code';
             color: $red;
+            font-weight: 500;
         }
 
         .subtitle-wrapper {
