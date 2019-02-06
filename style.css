@@ -47,6 +47,12 @@ body #columns {
   grid-template-columns: 47.5% 47.5%;
   grid-gap: 5%;
 }
+body #columns #oath-location {
+  position: absolute;
+  top: 130px;
+  right: 20px;
+  font-weight: bold;
+}
 body #columns li {
   font-size: 14px;
 }

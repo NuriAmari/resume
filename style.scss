@@ -2,6 +2,7 @@
 //$red: #1F4788;
 //$red: #48929B;
 $red: #4B77BE;
+
 * {
     margin: 0;
     padding: 0;
@@ -55,6 +56,13 @@ body {
         padding-bottom: 3%;
         grid-template-columns: 47.5% 47.5%;
         grid-gap: 5%;
+
+        #oath-location {
+            position: absolute;
+            top: 130px;
+            right: 20px;
+            font-weight: bold;
+        }
 
         li {
             font-size: 14px;
