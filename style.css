@@ -40,8 +40,7 @@ body header {
 body #columns {
   width: 100%;
   display: grid;
-  border: 2px solid #ededed;
-  border-top: none;
+  border: none;
   padding: 4% 5%;
   padding-bottom: 3%;
   grid-template-columns: 47.5% 47.5%;
