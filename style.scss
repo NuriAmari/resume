@@ -1,37 +1,49 @@
-$red: #4b77be;
+$accent: #4b77be;
+$grey: #eee;
+$dark-grey: darken($grey, 70%);
+
+/* RESET */
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Avenir", "Arial";
   box-sizing: border-box;
+  font-family: "Avenir", "Arial", "sans-serif";
 
   a {
     text-decoration: none;
     color: inherit;
   }
 
-  i {
-    vertical-align: middle;
+  li {
+    list-style: none;
   }
+}
 
-  &.no-margin {
-    margin-bottom: 0 !important;
-  }
+/* GENERAL ELEMENT STYLE */
+
+// Heading styles
+
+h1 {
+  font-size: 45pt;
+}
+
+h2 {
+  font-size: 18pt;
+}
+
+h3 {
+  font-size: 14pt;
+}
+
+i {
+  vertical-align: middle; // vertically align icons
 }
 
 body {
   width: 8.5in;
   height: 11in;
-
-  li {
-    list-style: none;
-  }
-
-  h1 {
-    font-weight: bold;
-    font-size: 50px;
-  }
+  border: 1px solid $dark-grey;
 
   header {
     padding: 0 0.4in;
@@ -40,7 +52,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 1.1in;
-    background-color: $red;
+    background-color: $accent;
     width: 100%;
     color: white;
   }
@@ -49,16 +61,8 @@ body {
     width: 100%;
     display: grid;
     padding: 4% 5%;
-    padding-bottom: 3%;
     grid-template-columns: 47.5% 47.5%;
     grid-gap: 5%;
-
-    #oath-location {
-      position: absolute;
-      top: 130px;
-      right: 20px;
-      font-weight: bold;
-    }
 
     li {
       font-size: 14px;
@@ -66,7 +70,7 @@ body {
 
     .bullet {
       font-family: "Fira Code";
-      color: $red;
+      color: $accent;
       font-weight: 500;
     }
 
@@ -120,12 +124,12 @@ body {
             padding: 2px 5px;
             margin: 2px 0;
             display: inline-block;
-            background-color: #eeeeee;
+            background-color: $grey;
             border-radius: 4px;
-            color: darker(#eeeeee, 0.5);
+            color: $dark-grey;
 
             span {
-              color: $red;
+              color: $accent;
               font-weight: bold;
             }
           }
@@ -140,23 +144,23 @@ body {
         padding: 2px 5px;
         margin: 2px 0;
         display: inline-block;
-        background-color: #eee;
+        background-color: $grey;
         border-radius: 4px;
       }
     }
 
-    #education {
-      p {
-        font-size: 14px;
-      }
+    // #education {
+    //   p {
+    //     font-size: 14px;
+    //   }
 
-      margin-bottom: 18px;
+    //   margin-bottom: 18px;
 
-      #years,
-      span {
-        font-family: "Fira Code";
-        margin-bottom: 10px;
-      }
-    }
+    //   #years,
+    //   span {
+    //     font-family: "Fira Code";
+    //     margin-bottom: 10px;
+    //   }
+    // }
   }
 }
