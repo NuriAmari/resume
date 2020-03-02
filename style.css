@@ -33,14 +33,13 @@ body header {
   justify-content: space-between;
   align-items: center;
   height: 1.1in;
-  background-color: #4B77BE;
+  background-color: #4b77be;
   width: 100%;
   color: white;
 }
 body #columns {
   width: 100%;
   display: grid;
-  border: none;
   padding: 4% 5%;
   padding-bottom: 3%;
   grid-template-columns: 47.5% 47.5%;
@@ -57,7 +56,7 @@ body #columns li {
 }
 body #columns .bullet {
   font-family: "Fira Code";
-  color: #4B77BE;
+  color: #4b77be;
   font-weight: 500;
 }
 body #columns .subtitle-wrapper {
@@ -102,12 +101,12 @@ body #columns .section .subsection .title p {
   padding: 2px 5px;
   margin: 2px 0;
   display: inline-block;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   border-radius: 4px;
-  color: darker(#EEEEEE, 0.5);
+  color: darker(#eeeeee, 0.5);
 }
 body #columns .section .subsection .title p span {
-  color: #4B77BE;
+  color: #4b77be;
   font-weight: bold;
 }
 body #columns .languages-list {
@@ -117,7 +116,7 @@ body #columns .languages-list li {
   padding: 2px 5px;
   margin: 2px 0;
   display: inline-block;
-  background-color: #EEEEEE;
+  background-color: #eee;
   border-radius: 4px;
 }
 body #columns #education {
@@ -126,7 +125,8 @@ body #columns #education {
 body #columns #education p {
   font-size: 14px;
 }
-body #columns #education #years, body #columns #education span {
+body #columns #education #years,
+body #columns #education span {
   font-family: "Fira Code";
   margin-bottom: 10px;
 }

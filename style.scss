@@ -1,168 +1,162 @@
-//$red: #d25454;
-//$red: #1F4788;
-//$red: #48929B;
-$red: #4B77BE;
+$red: #4b77be;
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Avenir", "Arial";
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Avenir", "Arial";
+  box-sizing: border-box;
 
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 
-    i {
-        vertical-align: middle;
-    }
-     &.no-margin {
-        margin-bottom: 0 !important;
-    }
+  i {
+    vertical-align: middle;
+  }
+
+  &.no-margin {
+    margin-bottom: 0 !important;
+  }
 }
 
 body {
-    width: 8.5in;
-    height: 11in;
+  width: 8.5in;
+  height: 11in;
+
+  li {
+    list-style: none;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 50px;
+  }
+
+  header {
+    padding: 0 0.4in;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.1in;
+    background-color: $red;
+    width: 100%;
+    color: white;
+  }
+
+  #columns {
+    width: 100%;
+    display: grid;
+    padding: 4% 5%;
+    padding-bottom: 3%;
+    grid-template-columns: 47.5% 47.5%;
+    grid-gap: 5%;
+
+    #oath-location {
+      position: absolute;
+      top: 130px;
+      right: 20px;
+      font-weight: bold;
+    }
 
     li {
-        list-style: none;
+      font-size: 14px;
     }
 
-    h1 {
-        font-weight: bold;
-        font-size: 50px;
+    .bullet {
+      font-family: "Fira Code";
+      color: $red;
+      font-weight: 500;
     }
 
-    header {
-        padding: 0 0.4in;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        height: 1.1in;
-        background-color: $red;
-        width: 100%;
-        color: white;
+    .subtitle-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+
+      .date {
+        font-family: "Fira Code", sans-serif;
+        font-size: 13px;
+        margin-top: 3px;
+      }
     }
 
-    #columns {
-        width: 100%;
-        display: grid;
-        border: 2px solid darken(#EEEEEE, 0.2);
-        border-top: none;
-        padding: 4% 5%;
-        padding-bottom: 3%;
-        grid-template-columns: 47.5% 47.5%;
-        grid-gap: 5%;
+    .subtitle {
+      font-size: 15px;
+      font-style: italic;
+      margin-bottom: 6px;
+    }
 
-        #oath-location {
-            position: absolute;
-            top: 130px;
-            right: 20px;
-            font-weight: bold;
+    .section {
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      margin-bottom: 20px;
+
+      .subsection {
+        margin-bottom: 15px;
+
+        .description {
+          li {
+            margin-bottom: 5px;
+            line-height: 16px;
+          }
         }
 
-        li {
-            font-size: 14px;
-        }
+        .title {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
 
-        .bullet {
-            font-family: 'Fira Code';
-            color: $red;
-            font-weight: 500;
-        }
-
-        .subtitle-wrapper {
-            display: flex;
-            flex-direction: row; 
-            justify-content: space-between;
-            width: 100%;
-
-            .date {
-                font-family: 'Fira Code', sans-serif;
-                font-size: 13px;
-                margin-top: 3px;
-            }
-        } 
-        
-        .subtitle {
-            font-size: 15px;
-            font-style: italic;
+          &.no-subtitle {
             margin-bottom: 6px;
+          }
+
+          p {
+            font-size: 14px;
+            padding: 2px 5px;
+            margin: 2px 0;
+            display: inline-block;
+            background-color: #eeeeee;
+            border-radius: 4px;
+            color: darker(#eeeeee, 0.5);
+
+            span {
+              color: $red;
+              font-weight: bold;
+            }
+          }
         }
-
-        .section {
-
-            h2 {
-                margin-bottom: 10px;
-            }
-            
-            margin-bottom: 20px;
-
-            .subsection {
-
-                margin-bottom: 15px;
-
-                .description {
-
-                    li {
-                        margin-bottom: 5px;
-                        line-height: 16px;
-                    }
-                } 
-
-                .title {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-
-                    &.no-subtitle {
-                        margin-bottom: 6px;
-                    }
-
-                    p {
-                        font-size: 14px;
-                        padding: 2px 5px;
-                        margin: 2px 0;
-                        display: inline-block;
-                        background-color: #EEEEEE;
-                        border-radius: 4px;
-                        color: darker(#EEEEEE, 0.5);
-
-                        span {
-                            color: $red;
-                            font-weight: bold;
-                        }
-                    }
-                }
-            }
-        }
-
-        .languages-list  {
-            margin: 5px 0;
-
-            li {
-                padding: 2px 5px;
-                margin: 2px 0;
-                display: inline-block;
-                background-color: #EEEEEE;
-                border-radius: 4px;
-            }
-        }
-
-        #education {
-            p {
-                font-size: 14px;
-            }
-
-            margin-bottom: 18px;
-
-            #years, span {
-                font-family: "Fira Code";
-                margin-bottom: 10px;
-            }
-        }
+      }
     }
+
+    .languages-list {
+      margin: 5px 0;
+
+      li {
+        padding: 2px 5px;
+        margin: 2px 0;
+        display: inline-block;
+        background-color: #eee;
+        border-radius: 4px;
+      }
+    }
+
+    #education {
+      p {
+        font-size: 14px;
+      }
+
+      margin-bottom: 18px;
+
+      #years,
+      span {
+        font-family: "Fira Code";
+        margin-bottom: 10px;
+      }
+    }
+  }
 }
