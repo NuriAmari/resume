@@ -56,18 +56,29 @@
             </div>
             <ul class="description">
               <li>
-                <span class="bullet">=></span> Fetched and displayed data from
-                <strong>Redis</strong>, <strong>BigQuery</strong> and
-                <strong>MySQL</strong> in <strong>Django + React</strong> based
-                internal control panel
+                <span class="bullet">=></span> Created a
+                <strong>uWSGI</strong> worker performance profiling tool
+                allowing engineers to easily collect
+                <strong>flamegraphs</strong> and other performance metrics from
+                remote servers
               </li>
               <li>
-                <span class="bullet">=></span> Implemented thread safe Redis
-                wrapper and Django middleware to log per request Redis metrics
+                <span class="bullet">=></span> Implemented a
+                <strong>thread safe Redis</strong>
+                wrapper and <strong>Django middleware</strong> to log per
+                request Redis metrics
               </li>
               <li>
-                <span class="bullet">=></span> Configured collectd daemon to
-                collect and report Redis metrics from various machines
+                <span class="bullet">=></span> Identified and resolved
+                performance bottlenecks through analysis of collected metrics,
+                reducing latency of numerous outward facing APIs by over
+                <strong>50%</strong>
+              </li>
+              <li>
+                <span class="bullet">=></span> Configured
+                <strong>Python daemon</strong> and
+                <strong>TCP server</strong> to safely manage processes
+                facilitating safe remote execution of arbitrary programs
               </li>
             </ul>
           </div>
@@ -100,11 +111,6 @@
                 visualization components with <strong>SVG</strong>,
                 <strong>d3.js</strong> and <strong>React</strong>
               </li>
-              <li>
-                <span class="bullet">=></span> Manipulated
-                <strong>Django</strong> models, views and created new endpoints
-                using <strong>ORM</strong> based queries to postgres
-              </li>
             </ul>
           </div>
           <div class="subsection">
@@ -132,23 +138,6 @@
               </li>
             </ul>
           </div>
-          <div class="subsection">
-            <div class="title">
-              <h3>WATonomous</h3>
-              <p>Waterloo</p>
-            </div>
-            <div class="subtitle-wrapper">
-              <p class="subtitle">Dashboard UI Team</p>
-              <p class="date">Sept => Dec 2018</p>
-            </div>
-            <ul class="description">
-              <li>
-                <span class="bullet">=></span> Implemented a logging interface
-                for a car using <strong>CAN Bus</strong>,
-                <strong>C++</strong> and <strong>Qt Components</strong>
-              </li>
-            </ul>
-          </div>
         </div>
         <div class="section" id="education">
           <h2>Education</h2>
@@ -165,12 +154,16 @@
           <div class="subsection no-margin">
             <ul>
               <li>
+                <span class="bullet">=></span> Interpreters & static analysis
+                tools
+              </li>
+              <li>
                 <span class="bullet">=></span> Browser implementation &
                 networking
               </li>
-              <li><span class="bullet">=></span> Vim themes, plugins, etc</li>
+              <li><span class="bullet">=></span> Vim, Tmux, Unix tools</li>
               <li><span class="bullet">=></span> Podcasting, audiobooks</li>
-              <li><span class="bullet">=></span> Computer networking</li>
+              <li><span class="bullet">=></span> Soccer, eSports</li>
             </ul>
           </div>
         </div>
@@ -181,31 +174,30 @@
           <ul>
             <h4>Languages</h4>
             <ul class="languages-list">
+              <li>Python</li>
               <li>JavaScript</li>
-              <li>Python3</li>
               <li>C++</li>
-              <li>C</li>
+              <li>TypeScript</li>
+              <li>SQL</li>
               <li>Bash</li>
             </ul>
             <h4>Libraries</h4>
             <ul class="languages-list">
               <li>React</li>
+              <li>Django</li>
               <li>d3</li>
+              <li>Redis</li>
               <li>Redux</li>
               <li>SASS</li>
-              <li>Django</li>
-              <li>Vue</li>
+              <li>PySpy</li>
             </ul>
             <h4>Technologies</h4>
             <ul class="languages-list">
-              <li>Webpack</li>
-              <li>Babel</li>
+              <li>Vim + Tmux</li>
               <li>Git</li>
+              <li>Webpack</li>
               <li>SVG</li>
               <li>PostgreSQL</li>
-              <li>Node</li>
-              <li>MongoDB</li>
-              <li>Vim</li>
             </ul>
           </ul>
         </div>
@@ -213,10 +205,8 @@
           <h2>Projects</h2>
           <div class="subsection">
             <div class="title no-subtitle">
-              <h3>JSON Formatter & Linter</h3>
-              <a
-                target="blank"
-                href="https://github.com/NuriAmari/react-personal-website"
+              <h3>Lara</h3>
+              <a target="blank" href="https://github.com/NuriAmari/Lara"
                 ><p>
                   <span><i class="fab fa-github"></i></span> github repo
                 </p></a
@@ -224,15 +214,44 @@
             </div>
             <ul class="description">
               <li>
-                <span class="bullet">=></span> Implemented in Python, tokenizes
-                chosen JSON file using a
-                <strong>deterministic finite automaton</strong> and the
-                <strong>maximal munch</strong> algorithm
+                <span class="bullet">=></span> A small interpreted language
+                created using the language tools below and an
+                <strong>AST evaluator</strong>
               </li>
               <li>
-                <span class="bullet">=></span> Parses and validates the file
-                using a <strong>context free grammar</strong> and a top down
-                parsing strategy
+                <span class="bullet">=></span> Currently supports variables,
+                conditional statements, loops and functions including closures
+              </li>
+            </ul>
+          </div>
+          <div class="subsection">
+            <div class="title no-subtitle">
+              <h3>Language Tools</h3>
+              <a
+                target="blank"
+                href="https://github.com/NuriAmari/Language-Tools"
+                ><p>
+                  <span><i class="fab fa-github"></i></span> github repo
+                </p></a
+              >
+            </div>
+            <ul class="description">
+              <li>
+                <span class="bullet">=></span> A library of
+                <strong>lexer</strong> and
+                <strong>parser generation</strong> tools
+              </li>
+              <li>
+                <span class="bullet">=></span> Created
+                <strong>composable</strong> regex like objects allowing the user
+                to describe any <strong>regular language</strong> and
+                <strong>generate</strong> a corresponding
+                <strong>deterministic finite automata</strong>
+              </li>
+              <li>
+                <span class="bullet">=></span> Implemented abstractions around
+                <strong>grammar</strong> description, multiple parsing
+                algorithms and sanity checks to help characterize grammars
               </li>
             </ul>
           </div>
@@ -254,18 +273,9 @@
                 the entire site through text commands
               </li>
               <li>
-                <span class="bullet">=></span> Populated site content from a
-                single JSON file for efficient content management
-              </li>
-              <li>
                 <span class="bullet">=></span> Produced interactive
                 <strong>SVG</strong> graphics,
                 <strong>CSS animations</strong> and a responsive design
-              </li>
-              <li>
-                <span class="bullet">=></span> Implemented using
-                <strong>React</strong>, <strong>SASS</strong>,
-                <strong>Adobe Illustrator</strong> and <strong>Sketch</strong>
               </li>
             </ul>
           </div>
