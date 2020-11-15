@@ -48,10 +48,7 @@ body header {
 }
 body #columns {
   width: 100%;
-  display: grid;
   padding: 4% 5%;
-  grid-template-columns: 47.5% 47.5%;
-  grid-gap: 5%;
 }
 body #columns li {
   font-size: 14px;
@@ -84,7 +81,7 @@ body #columns .section h2 {
   margin-bottom: 10px;
 }
 body #columns .section .subsection {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 body #columns .section .subsection .description li {
   margin-bottom: 5px;
